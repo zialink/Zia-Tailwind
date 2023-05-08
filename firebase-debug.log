@@ -1,0 +1,135 @@
+[debug] [2023-05-08T01:38:27.409Z] ----------------------------------------------------------------------
+[debug] [2023-05-08T01:38:27.421Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-08T01:38:27.423Z] CLI Version:   11.30.0
+[debug] [2023-05-08T01:38:27.424Z] Platform:      win32
+[debug] [2023-05-08T01:38:27.425Z] Node Version:  v20.1.0
+[debug] [2023-05-08T01:38:27.426Z] Time:          Mon May 08 2023 02:38:27 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-08T01:38:27.427Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-08T01:38:27.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-08T01:38:27.463Z] > authorizing via signed-in user (zedlinkus@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Zia\Documents\StackUp\BlogPageProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-08T01:39:47.996Z] > refreshing access token with scopes: []
+[debug] [2023-05-08T01:39:48.012Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-08T01:39:48.013Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-08T01:39:49.026Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-08T01:39:49.026Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-08T01:39:49.271Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-08T01:39:49.272Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"isaiahobi-blogtailwind","name":"isaiahobi-blogtailwind"}
+[debug] [2023-05-08T01:39:51.002Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-08T01:39:51.003Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7136464195380103880"}
+[debug] [2023-05-08T01:39:51.007Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 [none]
+[debug] [2023-05-08T01:39:52.613Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 200
+[debug] [2023-05-08T01:39:52.614Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 {"name":"operations/cp.7136464195380103880"}
+[debug] [2023-05-08T01:39:53.118Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-05-08T01:39:53.119Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 [none]
+[debug] [2023-05-08T01:39:53.556Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 200
+[debug] [2023-05-08T01:39:53.558Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 {"name":"operations/cp.7136464195380103880"}
+[debug] [2023-05-08T01:39:54.594Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-05-08T01:39:54.604Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 [none]
+[debug] [2023-05-08T01:39:55.090Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 200
+[debug] [2023-05-08T01:39:55.091Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7136464195380103880 {"name":"operations/cp.7136464195380103880","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"934310044473","projectId":"isaiahobi-blogtailwind","lifecycleState":"ACTIVE","name":"isaiahobi-blogtailwind","createTime":"2023-05-08T01:39:56.735Z"}}
+[debug] [2023-05-08T01:39:55.133Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/isaiahobi-blogtailwind:addFirebase [none]
+[debug] [2023-05-08T01:39:59.071Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/isaiahobi-blogtailwind:addFirebase 200
+[debug] [2023-05-08T01:39:59.072Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/isaiahobi-blogtailwind:addFirebase {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:39:59.073Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:00.014Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:00.015Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:40:00.687Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-05-08T01:40:00.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:01.651Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:01.651Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:40:02.665Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-05-08T01:40:02.667Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:03.646Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:03.646Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:40:05.654Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-05-08T01:40:05.660Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:06.291Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:06.292Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:40:10.327Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-05-08T01:40:10.337Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:11.287Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:11.287Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx"}
+[debug] [2023-05-08T01:40:19.320Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-05-08T01:40:19.325Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx [none]
+[debug] [2023-05-08T01:40:20.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx 200
+[debug] [2023-05-08T01:40:20.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx {"name":"operations/workflows/ZWExODJiMzktYTY0NS00ZmYwLThhYzgtNGRlYjY4OGFiNGQx","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"isaiahobi-blogtailwind","projectNumber":"934310044473","displayName":"isaiahobi-blogtailwind","name":"projects/isaiahobi-blogtailwind","resources":{"hostingSite":"isaiahobi-blogtailwind"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: isaiahobi-blogtailwind
+[info]    - Project Name: isaiahobi-blogtailwind
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/isaiahobi-blogtailwind/overview
+[info] i  Using project isaiahobi-blogtailwind (isaiahobi-blogtailwind) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-05-08T01:40:39.600Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-05-08T01:40:40.153Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-05-08T01:40:40.154Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.21.0","browserURL":"https://www.gstatic.com/firebasejs/9.21.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.21.0/firebase.tgz"},"live":{"version":"9.21","browserURL":"https://www.gstatic.com/firebasejs/live/9.21/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.21/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.21.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.21.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.21.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.21.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.21.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.21.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.21.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.21.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Zia\Documents\StackUp\BlogPageProject is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=91373319&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-05-08T01:41:06.574Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-05-08T01:41:06.575Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-05-08T01:41:07.444Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-05-08T01:41:07.445Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-05-08T01:41:07.500Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-05-08T01:41:08.437Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-05-08T01:41:08.438Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"zialink","id":16071848,"node_id":"MDQ6VXNlcjE2MDcxODQ4","avatar_url":"https://avatars.githubusercontent.com/u/16071848?v=4","gravatar_id":"","url":"https://api.github.com/users/zialink","html_url":"https://github.com/zialink","followers_url":"https://api.github.com/users/zialink/followers","following_url":"https://api.github.com/users/zialink/following{/other_user}","gists_url":"https://api.github.com/users/zialink/gists{/gist_id}","starred_url":"https://api.github.com/users/zialink/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/zialink/subscriptions","organizations_url":"https://api.github.com/users/zialink/orgs","repos_url":"https://api.github.com/users/zialink/repos","events_url":"https://api.github.com/users/zialink/events{/privacy}","received_events_url":"https://api.github.com/users/zialink/received_events","type":"User","site_admin":false,"name":"Isaiah Obi","company":null,"blog":"www.isaiahobi.com","location":"Lagos, Nigeria","email":"zedlinkus@gmail.com","hireable":true,"bio":"I am a passionate full-stack developer who also has an interest in data science. I code using Python, Javascript, Reactjs, PHP, HTML, and CSS.","twitter_username":null,"public_repos":68,"public_gists":0,"followers":5,"following":2,"created_at":"2015-11-29T18:46:15Z","updated_at":"2023-05-08T01:41:03Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":62375,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as zialink 
+[info] 
+[debug] [2023-05-08T01:41:50.676Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-05-08T01:41:51.658Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-05-08T01:41:51.659Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-05-08T01:45:17.649Z] >>> [apiv2][query] GET https://api.github.com/repos/blog-tailwind/actions/secrets/public-key type=owner
+[debug] [2023-05-08T01:45:18.793Z] <<< [apiv2][status] GET https://api.github.com/repos/blog-tailwind/actions/secrets/public-key 404
+[debug] [2023-05-08T01:45:18.793Z] <<< [apiv2][body] GET https://api.github.com/repos/blog-tailwind/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
